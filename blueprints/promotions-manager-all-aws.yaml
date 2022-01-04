@@ -44,12 +44,12 @@ applications:
           - RELEASE_NUMBER: $RELEASE_NUMBER
           - API_BUILD_NUMBER: $API_BUILD_NUMBER
   
-  services:
-    - promotions-manager-docdb:
-        input_values:
-          - USERNAME: $DB_USERNAME
-          - PASSWORD: $DB_PASSWORD
-          - SANDBOX_ID: ${SandboxID}
+services:
+  - promotions-manager-docdb:
+      input_values:
+        - USERNAME: $DB_USERNAME
+        - PASSWORD: $DB_PASSWORD
+        - SANDBOX_ID: ${SandboxID}
 
-  debugging:
-    availability: on
+debugging:
+  availability: on
